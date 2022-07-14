@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+  <script src="https://kit.fontawesome.com/e26ed1f9db.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,100;0,200;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/account.css">
+</head>
+
+<body id="account">
+  <div class="row">
+    <div class="col-3">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+      </button>
+        <div class="d-flex flex-column  p-3 " style="width: 240px;" >
+          <div class=" collapse navbar-collapse" id="navbarScroll">            <a href=" / class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          <img src="images/logo.png" alt="" class=" brand-logo">
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#home" />
+                  </svg>
+                  Transfer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#speedometer2" />
+                  </svg>
+                  Pay Bills
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#table" />
+                  </svg>
+                  Buy Airtime
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#grid" />
+                  </svg>
+                  Qr Payment
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#people-circle" />
+                  </svg>
+                  Loan
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#people-circle" />
+                  </svg>
+                  Virtual Card
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+              <a href="/logout" class="d-flex align-items-center link-dark text-decoration-none d" >
+                <img src="images/man.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>sign out</strong>
+              </a>
+              <!-- <ul class="dropdown-menu text-small shadow" aria-labelledby="">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="col col-12 bal">
+      <div>
+        <img src="" alt="">
+        <h3>welcome <%= user.username %></h3>
+        <p>3116683278</p>
+      </div>
+      <div class="available-balance">
+        <p>Available Balance:</p>
+        <h4>&#8358; <%= user.balance %></h4>
+      </div>
+      <h3 class="feature">Features</h3>
+
+      <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2 ">
+                    <a class="blue" href="#">
+                      <img class="card-img-top" src="images/111.png" alt="Card image cap">
+                    </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2 ">
+                  <a class="blue" href="#">
+                  <img class="card-img-top" src="images/222.png" alt="Card image cap">
+
+                    </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2 ">
+                    <a class="blue" href="#">
+                      <img class="card-img-top" src="images/333.png" alt="Card image cap">
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2 ">
+                    <a class="blue" href="#">
+                      <img class="card-img-top" src="images/111.png" alt="Card image cap">
+                    </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <a class="blue" href="#">
+                  <img class="card-img-top" src="images/222.png" alt="Card image cap">
+
+                    </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2 ">
+                    <a class="blue" href="#">
+                      <img class="card-img-top" src="images/333.png" alt="Card image cap">
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide d-lg-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#">
+      <img src="images/111.png" class="d-block w" alt="...">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#">
+      <img src="images/222.png" class="d-block w" alt="...">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#">
+      <img src="images/333.png" class="d-block w" alt="...">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+
+  </div>
+</body>
+
+</html>
