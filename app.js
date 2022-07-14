@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 app.use(session({
-  secret: "our little secret",
+  secret: process.env.CLIENT_SECRET,
   resave: false,
   saveUninitialized: false
 }));
@@ -34,7 +34,7 @@ const idEnu = {
   message: 'Status is required.'
 };
 
-mongoose.connect('mongodb://127.0.0.1:27017/bankUserDb', {
+mongoose.connect('mongodb+srv://chuchom99:Twiste11@cluster0.mfaxh.mongodb.net/bankUserDb', {
   useNewUrlParser: true
 });
 
