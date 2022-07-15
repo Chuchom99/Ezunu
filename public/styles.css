@@ -216,6 +216,9 @@ height: 350px;
   .navbar-collapse{
     margin-left: 6%
   }
+  .navbar-toggler{
+    margin-right: 0
+  }
   .footer-button{
   margin: 4% 0
   }
