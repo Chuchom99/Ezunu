@@ -2,10 +2,11 @@ body, html {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   padding: 2% 1%;
-  background-color: #FFFFFF;
+  background-color: #F9F9F9;
   color:  #001D6E;
   font-family: 'Poppins', sans-serif
 }
+
 .nav-pills .nav-link{
   color:
 }
@@ -55,7 +56,7 @@ main {
   margin-top: 5%
 }
 .navbar-toggler {
-  margin-bottom: 50%;
+  margin-bottom: 10%;
 }
 .w{
   width: 70%;
@@ -86,8 +87,12 @@ main {
     margin-left: 14%;
     margin-bottom: 1.5%
   }
-  .navbar-toggler {
-    margin-top: -5%;
-    margin-bottom: 4%
+  .nav-link{
+    padding: 0 50%
   }
+  .brand-logo {
+    width: 100%;
+    margin-top: 5%
+  }
+
 }
