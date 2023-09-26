@@ -1,0 +1,217 @@
+<%- include("partials/header") -%>
+<!-- <div class="container">
+  <form class="" action="index.html" method="post">
+    <div class="row g-0">
+      <div class="col-lg-6 col-12 blue">
+        col-sm-6 .c
+
+      </div>
+      <div class="col-lg-6 col-12 white " style="background-color: #001D6E">
+        col-6 .col-md-4
+
+      </div>
+    </div>
+  </form>
+</div> -->
+
+<section id="bvn">
+
+</section>
+
+<section class="h-100 h-custom gradient-custom-2">
+  <form id="search" action="" method="post" onsubmit="javascript: return SubmitForm();">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="p-5">
+                    <h3 class="fw-normal mb-5 blue">General Infomation</h3>
+
+                    <!-- <div class="mb-4 pb-2">
+                    <select class="select">
+                      <option value="1">Title</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
+                  </div> -->
+                    <input type="text" id="form3Examplev2" class="form-control form-control-lg" name="username" required />
+                    <label class="form-label" for="form3Examplev2">Username</label>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev2" class="form-control form-control-lg" name="firstName" required/>
+                          <label class="form-label" for="form3Examplev2">First name</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev3" class="form-control form-control-lg" name="middleName" />
+                          <label class="form-label" for="form3Examplev3">Middle name</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="text" id="form3Examplev3" class="form-control form-control-lg" name="lastName" required/>
+                        <label class="form-label" for="form3Examplev3">Last name</label>
+                      </div>
+                    </div>
+                    <div class="mb-4 pb-2" hidden>
+                      <div class="form-outline">
+                        <input type="text" id="form3Examplev3" class="form-control form-control-lg" name="balance" />
+
+                      </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <select class="select" name="occupation">
+                        <option value="selfEmploye">Self-employed</option>
+                        <option value="enterprenuer">Enterprenuer</option>
+                        <option value="civilServant">Civil servant</option>
+                        <option value="student">Student</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="date" id="form3Examplev4" class="form-control form-control-lg" name="dob" required/>
+                        <label class="form-label" for="form3Examplev4">Date Of Birth</label>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+
+                        <div class="form-outline">
+                          <input type="file" id="img" name="img" accept="image/*" required>
+                          <label class="form-label" for="form3Examplev5">Upload Id</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6">
+
+                        <select class="select" name="id" required>
+                          <option value="intPassport">Int passport</option>
+                          <option value="nationalId">National ID</option>
+                          <option value="driversLiscence">Drivers Liscence</option>
+                          <option value="votersCard">Voters Card</option>
+                          <option value="employeeIdCard">Employees ID card</option>
+                        </select>
+
+                      </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="password" id="form3Examplev4" class="form-control form-control-lg" name="password" required/>
+                        <label class="form-label" for="form3Examplev4">Password</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-6 bg-blue">
+                  <div class="p-5">
+                    <h3 class="fw-normal mb-5">Contact Details</h3>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" name="nationality" required/>
+                        <label class="form-label" for="form3Examplea2">Nationality</label>
+                      </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea3" class="form-control form-control-lg" name="state" required/>
+                        <label class="form-label" for="form3Examplea3">State</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-5 mb-4 pb-2">
+
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea4" class="form-control form-control-lg" name="address" required/>
+                          <label class="form-label" for="form3Examplea4">Address</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-7 mb-4 pb-2">
+
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea5" class="form-control form-control-lg" name="zipCode" />
+                          <label class="form-label" for="form3Examplea5">Zip code</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="tel" id="form3Examplea6" class="form-control form-control-lg" name="phone" required/>
+                        <label class="form-label" for="form3Examplea6">Phone</label>
+                      </div>
+                    </div>
+
+                    <!-- <div class="row">
+                    <div class="col-md-5 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea7">Code +</label>
+                      </div>
+
+                    </div>
+                    <div class="col-md-7 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea8" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea8">Phone Number</label>
+                      </div>
+
+                    </div>
+                  </div> -->
+
+                    <div class="mb-4">
+                      <div class="form-outline form-white">
+                        <input type="email" id="form3Examplea9" class="form-control form-control-lg" name="email" required/>
+                        <label class="form-label" for="form3Examplea9">Your Email</label>
+                      </div>
+                    </div>
+
+                    <!-- <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                    <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                    <label class="form-check-label text-white" for="form2Example3">
+                      I have read and acceptted the Terms and Conditions
+                    </label>
+                  </div> -->
+
+                    <button type="submit" class="btn btn-light btn-lg" data-mdb-ripple-color="dark">Register</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+
+<%- include("partials/footer") -%>

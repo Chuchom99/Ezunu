@@ -1,0 +1,98 @@
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  padding: 2% 1%;
+  background-color: #F9F9F9;
+  color:  #001D6E;
+  font-family: 'Poppins', sans-serif
+}
+
+.nav-pills .nav-link{
+  color:
+}
+.fa-bars{
+  color: #001D6E;
+}
+.brand-logo {
+  width: 40%
+}
+.bal{
+  text-align: center;
+  padding: 5% 2% 0;
+  margin-top: -14%
+
+}
+.dropdown{
+  margin-bottom: 3%
+}
+.col-3{
+  /* margin-left: 0 */
+}
+main {
+  display: inline-block;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+    background-color: #C4DDFF;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+.available-balance{
+  background-color: #001D6E;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 0;
+  border-radius: 1.5%;
+}
+.carousel{
+  margin-top: 5%
+}
+.navbar-toggler {
+  margin-bottom: 10%;
+}
+.w{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature{
+  float: left;
+  margin: 2% 0 -5%
+}
+
+@media (max-width:1010px) {
+  .available-balance{
+    width: 70%;
+    padding: 5% 1%;
+    border-radius: 3.5%;
+  }
+  /* .carousel{
+    margin-left: 20%;
+    margin-top:
+  } */
+  .bal{
+    /* margin-left: 20%; */
+    text-align: center;
+  }
+  .feature{
+    margin-top: 5%;
+    margin-left: 14%;
+    margin-bottom: 1.5%
+  }
+  .nav-link{
+    padding: 0 50%
+  }
+  .brand-logo {
+    width: 100%;
+    margin-top: 5%
+  }
+
+}
